@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "biz-page": {
+    "angular-bootstrap-templates": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/biz-page",
+            "outputPath": "dist/angular-bootstrap-templates",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "biz-page:build"
+            "browserTarget": "angular-bootstrap-templates:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "biz-page:build:production"
+              "browserTarget": "angular-bootstrap-templates:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "biz-page:build"
+            "browserTarget": "angular-bootstrap-templates:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "biz-page-e2e": {
+    "angular-bootstrap-templates-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "biz-page:serve"
+            "devServerTarget": "angular-bootstrap-templates:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "biz-page:serve:production"
+              "devServerTarget": "angular-bootstrap-templates:serve:production"
             }
           }
         },
@@ -135,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "biz-page"
+  "defaultProject": "angular-bootstrap-templates"
 }
