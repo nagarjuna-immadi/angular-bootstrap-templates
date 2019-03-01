@@ -14,7 +14,7 @@ import { TemplatesModule } from './templates/templates.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
+    NgbModule.forRoot(),
     TemplatesModule
   ],
   providers: [],

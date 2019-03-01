@@ -12,4 +12,11 @@ export class BizPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  images = [
+    './assets/img/intro-carousel/1.jpg',
+    './assets/img/intro-carousel/2.jpg',
+    './assets/img/intro-carousel/3.jpg',
+    './assets/img/intro-carousel/4.jpg'
+  ];
+
 }
